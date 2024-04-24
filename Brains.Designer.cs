@@ -36,10 +36,11 @@ namespace Zombie
             pictureBox1 = new PictureBox();
             label = new Label();
             terminateButton = new Button();
-            timer1 = new System.Windows.Forms.Timer(components);
+            EndTimer = new System.Windows.Forms.Timer(components);
             HoursTextBox = new TextBox();
             MinutesTextBox = new TextBox();
             SecondsTextBox = new TextBox();
+            ClockTimer = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -90,10 +91,10 @@ namespace Zombie
             terminateButton.UseVisualStyleBackColor = false;
             terminateButton.Click += TerminateButton_Click;
             // 
-            // timer1
+            // EndTimer
             // 
-            timer1.Enabled = true;
-            timer1.Tick += Timer1_Tick;
+            EndTimer.Enabled = true;
+            EndTimer.Tick += Timer1_Tick;
             // 
             // HoursTextBox
             // 
@@ -149,6 +150,11 @@ namespace Zombie
             SecondsTextBox.WordWrap = false;
             SecondsTextBox.Leave += SecondsTextBox_TextChanged;
             // 
+            // ClockTimer
+            // 
+            ClockTimer.Enabled = true;
+            ClockTimer.Tick += ClockTimer_Tick;
+            // 
             // Brains
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -167,7 +173,6 @@ namespace Zombie
             MinimizeBox = false;
             Name = "Brains";
             ShowIcon = false;
-            ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "brains..?";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -181,10 +186,11 @@ namespace Zombie
         private PictureBox pictureBox1;
         private Label label;
         private Button terminateButton;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer EndTimer;
         private Button updateButton;
         private TextBox HoursTextBox;
         private TextBox MinutesTextBox;
         private TextBox SecondsTextBox;
+        private System.Windows.Forms.Timer ClockTimer;
     }
 }

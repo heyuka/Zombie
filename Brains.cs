@@ -78,7 +78,7 @@ namespace Zombie
             }
 
             // Reset the timer
-            timer1.Interval = 30000;
+            EndTimer.Interval = 30000;
 
             // Update the label
             label.Text = labelText;
@@ -178,6 +178,11 @@ namespace Zombie
 
             // Update the end time
             UpdateEndTime(hours, minutes, seconds);
+        }
+
+        private void ClockTimer_Tick(object sender, EventArgs e)
+        {
+            UpdateWindowTitle();
         }
     }
 }
