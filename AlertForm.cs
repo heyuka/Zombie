@@ -25,7 +25,10 @@ namespace Zombie
 
         private void TerminateButton_Click(object sender, EventArgs e)
         {
-            Process.Start("shutdown", "/s /t 60");
+            var psi = new ProcessStartInfo("shutdown", "/s /t 0");
+            psi.CreateNoWindow = true;
+            psi.UseShellExecute = false;
+            Process.Start(psi);
         }
 
         int timeout = 5;

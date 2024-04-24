@@ -5,6 +5,12 @@ Have an IT department that knows how to set the screen lock time out through gro
 ![screenshot](feeding_screenshot.png)
 ![Searching Screenshot](searching_screenshot.png)
 
+When the countdown timer ends:
+
+![alt text](image.png)
+
+Abort to kill the process, Sanitize Facility to shut down the computer.
+
 ## Usage
 
 1. Download
