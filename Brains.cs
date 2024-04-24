@@ -58,6 +58,7 @@ namespace Zombie
         // When the timer ticks, the zombie will check if the user is still active
         private void Timer1_Tick(object sender, EventArgs e)
         {
+
             // Check if the user is active
             if (!UserIsActive())
             {
@@ -182,6 +183,15 @@ namespace Zombie
 
         private void ClockTimer_Tick(object sender, EventArgs e)
         {
+            // if current time is after endtime, open the Alert window
+            if (DateTime.Now > endTime)
+            {
+                this.Hide();
+                ClockTimer.Enabled = false;
+
+                AlertForm alert = new();
+                alert.ShowDialog(this);
+            }
             UpdateWindowTitle();
         }
 
