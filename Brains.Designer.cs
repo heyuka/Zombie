@@ -7,7 +7,7 @@ namespace Zombie
         ///  Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
-        private bool isVisible = false;
+        private bool isVisible = true;
 
         /// <summary>
         ///  Clean up any resources being used.
@@ -33,17 +33,16 @@ namespace Zombie
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Brains));
             NotificationAreaIcon = new NotifyIcon(components);
-            pictureBox1 = new PictureBox();
-            label = new Label();
+            NotificationAreaContextMenu = new ContextMenuStrip(components);
+            terminateToolStripMenuItem = new ToolStripMenuItem();
             terminateButton = new Button();
             EndTimer = new System.Windows.Forms.Timer(components);
             HoursTextBox = new TextBox();
             MinutesTextBox = new TextBox();
             SecondsTextBox = new TextBox();
             ClockTimer = new System.Windows.Forms.Timer(components);
-            NotificationAreaContextMenu = new ContextMenuStrip(components);
-            terminateToolStripMenuItem = new ToolStripMenuItem();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            HoursRemaining = new Label();
+            StatusLabel = new Label();
             NotificationAreaContextMenu.SuspendLayout();
             SuspendLayout();
             // 
@@ -54,22 +53,23 @@ namespace Zombie
             NotificationAreaIcon.ContextMenuStrip = NotificationAreaContextMenu;
             NotificationAreaIcon.MouseDoubleClick += NotificationAreaIcon_MouseDoubleClick;
             // 
-            // pictureBox1
+            // NotificationAreaContextMenu
             // 
-            resources.ApplyResources(pictureBox1, "pictureBox1");
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.TabStop = false;
+            resources.ApplyResources(NotificationAreaContextMenu, "NotificationAreaContextMenu");
+            NotificationAreaContextMenu.Items.AddRange(new ToolStripItem[] { terminateToolStripMenuItem });
+            NotificationAreaContextMenu.Name = "contextMenuStrip1";
             // 
-            // label
+            // terminateToolStripMenuItem
             // 
-            resources.ApplyResources(label, "label");
-            label.ForeColor = Color.Lime;
-            label.Name = "label";
+            resources.ApplyResources(terminateToolStripMenuItem, "terminateToolStripMenuItem");
+            terminateToolStripMenuItem.Name = "terminateToolStripMenuItem";
+            terminateToolStripMenuItem.Click += TerminateToolStripMenuItem_Click;
             // 
             // terminateButton
             // 
             resources.ApplyResources(terminateButton, "terminateButton");
             terminateButton.BackColor = Color.Firebrick;
+            terminateButton.FlatAppearance.BorderSize = 0;
             terminateButton.ForeColor = Color.Gold;
             terminateButton.Name = "terminateButton";
             terminateButton.UseVisualStyleBackColor = false;
@@ -115,34 +115,33 @@ namespace Zombie
             ClockTimer.Enabled = true;
             ClockTimer.Tick += ClockTimer_Tick;
             // 
-            // NotificationAreaContextMenu
+            // HoursRemaining
             // 
-            resources.ApplyResources(NotificationAreaContextMenu, "NotificationAreaContextMenu");
-            NotificationAreaContextMenu.Items.AddRange(new ToolStripItem[] { terminateToolStripMenuItem });
-            NotificationAreaContextMenu.Name = "contextMenuStrip1";
-            NotificationAreaContextMenu.Opening += contextMenuStrip1_Opening;
+            resources.ApplyResources(HoursRemaining, "HoursRemaining");
+            HoursRemaining.BackColor = Color.Black;
+            HoursRemaining.ForeColor = Color.Lime;
+            HoursRemaining.Name = "HoursRemaining";
             // 
-            // terminateToolStripMenuItem
+            // StatusLabel
             // 
-            resources.ApplyResources(terminateToolStripMenuItem, "terminateToolStripMenuItem");
-            terminateToolStripMenuItem.Name = "terminateToolStripMenuItem";
-            terminateToolStripMenuItem.Click += terminateToolStripMenuItem_Click;
+            resources.ApplyResources(StatusLabel, "StatusLabel");
+            StatusLabel.ForeColor = SystemColors.WindowText;
+            StatusLabel.Name = "StatusLabel";
             // 
             // Brains
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ControlDarkDark;
+            BackColor = Color.FromArgb(64, 64, 64);
+            Controls.Add(HoursRemaining);
             Controls.Add(SecondsTextBox);
             Controls.Add(MinutesTextBox);
             Controls.Add(HoursTextBox);
             Controls.Add(terminateButton);
-            Controls.Add(label);
-            Controls.Add(pictureBox1);
+            Controls.Add(StatusLabel);
             FormBorderStyle = FormBorderStyle.None;
             MaximizeBox = false;
             Name = "Brains";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             NotificationAreaContextMenu.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
@@ -151,8 +150,6 @@ namespace Zombie
         #endregion
 
         private NotifyIcon NotificationAreaIcon;
-        private PictureBox pictureBox1;
-        private Label label;
         private Button terminateButton;
         private System.Windows.Forms.Timer EndTimer;
         private TextBox HoursTextBox;
@@ -161,5 +158,7 @@ namespace Zombie
         private System.Windows.Forms.Timer ClockTimer;
         private ContextMenuStrip NotificationAreaContextMenu;
         private ToolStripMenuItem terminateToolStripMenuItem;
+        private Label HoursRemaining;
+        private Label StatusLabel;
     }
 }

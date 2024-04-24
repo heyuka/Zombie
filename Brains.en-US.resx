@@ -123,12 +123,15 @@
   <data name="NotificationAreaIcon.BalloonTipTitle" xml:space="preserve">
     <value>brains?</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="terminateToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 22</value>
+  </data>
   <data name="terminateToolStripMenuItem.Text" xml:space="preserve">
     <value>Terminate</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="NotificationAreaContextMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 48</value>
+    <value>127, 26</value>
   </data>
   <data name="NotificationAreaIcon.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -356,48 +359,78 @@
   <data name="NotificationAreaIcon.Visible" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-</value>
+  <data name="terminateButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Stencil, 21.75pt</value>
+  </data>
+  <data name="terminateButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 102</value>
+  </data>
+  <data name="terminateButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 58</value>
+  </data>
+  <data name="HoursTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Cascadia Code, 12pt, style=Bold</value>
+  </data>
+  <data name="HoursTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 6</value>
+  </data>
+  <data name="HoursTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 26</value>
+  </data>
+  <data name="MinutesTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Cascadia Code, 12pt, style=Bold</value>
+  </data>
+  <data name="MinutesTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>148, 6</value>
+  </data>
+  <data name="MinutesTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 26</value>
+  </data>
+  <data name="SecondsTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Cascadia Code, 12pt, style=Bold</value>
+  </data>
+  <data name="SecondsTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>180, 6</value>
+  </data>
+  <data name="SecondsTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 26</value>
+  </data>
+  <data name="HoursRemaining.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Cascadia Code, 28pt, style=Bold</value>
+  </data>
+  <data name="HoursRemaining.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 38</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="HoursRemaining.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="HoursRemaining.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 58</value>
+  </data>
+  <data name="HoursRemaining.Text" xml:space="preserve">
+    <value>00:00:00</value>
+  </data>
+  <data name="HoursRemaining.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="StatusLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="StatusLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Bahnschrift SemiBold Condensed, 29px, style=Bold</value>
+  </data>
+  <data name="StatusLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 1</value>
+  </data>
+  <data name="StatusLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 35</value>
+  </data>
+  <data name="StatusLabel.Text" xml:space="preserve">
+    <value>SEARCHING</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>216, 144</value>
+    <value>212, 166</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

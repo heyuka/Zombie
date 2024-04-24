@@ -46,7 +46,10 @@ namespace Zombie
         {
             // Set the window title to the remaining time
             TimeSpan remainingTime = endTime - DateTime.Now;
-            this.Text = remainingTime.ToString(@"hh\:mm\:ss");
+            string timeString = remainingTime.ToString(@"hh\:mm\:ss");
+
+            this.Text = timeString;
+            HoursRemaining.Text = timeString;
         }
 
         private int mouseX = 0;
@@ -55,33 +58,25 @@ namespace Zombie
         // When the timer ticks, the zombie will check if the user is still active
         private void Timer1_Tick(object sender, EventArgs e)
         {
-            //// Check if the current time is past the end time
-            //if (DateTime.Now > endTime)
-            //{
-            //    throw new Exception("Time's up!");
-            //    // Terminate
-            //    Application.Exit();
-            //}
-
-            string labelText = "Braaaaaaaiinnnsss...";
             // Check if the user is active
-            if (UserIsActive())
+            if (!UserIsActive())
             {
-                labelText = "Braaaaaiinns!!";
-            }
-            else
-            {
+                StatusLabel.Text = "SEARCHING";
                 // Simulate a key press
                 SendKeys.SendWait("{SCROLLLOCK}");
                 Thread.Sleep(10);
                 SendKeys.SendWait("{SCROLLLOCK}");
+
+                StatusLabel.ForeColor = Color.Gold;
+            }
+            else
+            {
+                StatusLabel.Text = "FEEDING";
+                StatusLabel.ForeColor = Color.Firebrick;
             }
 
             // Reset the timer
             EndTimer.Interval = 30000;
-
-            // Update the label
-            label.Text = labelText;
 
             UpdateWindowTitle();
         }
@@ -190,12 +185,7 @@ namespace Zombie
             UpdateWindowTitle();
         }
 
-        private void contextMenuStrip1_Opening(object sender, System.ComponentModel.CancelEventArgs e)
-        {
-
-        }
-
-        private void terminateToolStripMenuItem_Click(object sender, EventArgs e)
+        private void TerminateToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
