@@ -117,10 +117,248 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="notifyIcon1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="SecondsTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>104</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="SecondsTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="&gt;&gt;ClockTimer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;HoursTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="SecondsTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Cascadia Code, 36pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;SecondsTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="notifyIcon1.Text" xml:space="preserve">
+    <value>brains..?</value>
+  </data>
+  <data name="label.TabIndex" type="System.Int32, mscorlib">
+    <value>99</value>
+  </data>
+  <data name="&gt;&gt;NotificationAreaIcon.Name" xml:space="preserve">
+    <value>NotificationAreaIcon</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="HoursTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 76</value>
+  </data>
+  <data name="MinutesTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 63</value>
+  </data>
+  <data name="&gt;&gt;label.Name" xml:space="preserve">
+    <value>label</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAABAej/BAS2/wQErv8EBLL/AwO8/wMDyv8CAtj/AQHm/wEB8v8AAPr/AAD9/wAA//8AAP//AAD//wAA
+        //8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//wAA//8AAPv/AgLT/wQErv8EBLH/AwO4/wMDxP8CAtH/AgLe/wEB6/8BAfb/AAD8/wAA
+        /v8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AQHr/wQEuv8EBLD/BAS0/wMDvf8DA8n/AgLX/wEB
+        5f8BAfH/AAD5/wAA/f8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD7/wIC0/8EBK7/BASx/wMD
+        uP8DA8L/AgLQ/wIC3v8BAev/AQH2/wAA/P8AAP7/AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wEB
+        7v8DA73/BASv/wQEtP8DA73/AwPJ/wIC1/8BAeT/AQHx/wAA+f8AAP3/AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//wAA/P8CAtj/BASv/wQEsf8DA7j/AwPC/wMDz/8CAt3/AQHq/wEB9f8AAPv/AAD+/wAA
+        //8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//wAA//8AAP//AAD//wAA//8BAfD/AwO+/wQEr/8EBLT/AwO8/wMDyf8CAtX/AgLj/wEB
+        7/8AAPj/AAD9/wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP3/AgLY/wQEr/8EBLH/BAS3/wMD
+        wf8DA83/AgLb/wEB6f8BAfT/AAD7/wAA/v8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AQHy+wQE
+        orsGBjCWBgYwkQYGMIUGBjBxBgYwWQYGMEAGBjAmBgYwEQYGMAYGBjABBgYwAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD+/wIC2ukGBlGcBgYwlAYGMIsGBjB9BgYwaAYGME8GBjA0BgYwGwYGMAsGBjACBgYwAAYG
+        MAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//wAA//8AAP//AAD//wEB8/wEBKa+BgYwlgYGMJIGBjCHBgYwdAYGMFwGBjBCBgYwJwYG
+        MBEGBjAGBgYwAQYGMAAGBjAAAAAAAAAAAAAAAAAAAwO7zQAA+P4AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA/v8CAtrpBgZVngYGMJUGBjCNBgYwfgYG
+        MGkGBjBQBgYwNQYGMBsGBjALBgYwAwYGMAAGBjAAAAAAAAAAAAAGBjCVBQVwpAIC4e8AAP//AAD//wAA
+        //8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8BAfT8BASpvwYG
+        MJcGBjCSBgYwhwYGMHQGBjBcBgYwQwYGMCgGBjATBgYwBwYGMAEGBjAABgYwAAYGMIcGBjCTBgYwlwMD
+        uMsAAPf+AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP7/AgLh7wYGYqAGBjCVBgYwjQYGMH4GBjBqBgYwUgYGMDcGBjAdBgYwDAYGMAMGBjABBgYwagYG
+        MIAGBjCOBgYwlQUFbaQCAuHvAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//wAA//8AAP//AQH2/QQEssYGBjCXBgYwkgYGMIgGBjB2BgYwXwYGMEUGBjAqBgYwFAYG
+        MAcGBjBEBgYwXwYGMHYGBjCIBgYwkwYGMJcEBK/EAQH1/QAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wIC4e8GBmiiBgYwlQYGMI4GBjCABgYwawYG
+        MFIGBjA3BgYwHQYGMB0GBjA3BgYwUgYGMGsGBjCABgYwjgYGMJUGBl+gAgLa6QAA/v8AAP//AAD//wAA
+        //8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wEB9/0DA7XIBgYwlwYG
+        MJMGBjCIBgYwdgYGMF8GBjBEBgYwBwYGMBQGBjAqBgYwRQYGMF8GBjB2BgYwiAYGMJIGBjCXBASswgEB
+        9PwAAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8BAef0BQV0pgYGMJUGBjCOBgYwgAYGMGoGBjAEBgYwBwYGMBAGBjAhBgYwOgYGMFUGBjBsBgYwgAYG
+        MI8GBjCXBgZboQIC2OkAAPz/AAD9/wAA/f8AAP3/AAD9/wAA/f8AAP3/AAD9/wAA/f8AAP3/AAD9/wAA
+        /f8AAP3/AAD9/wAA/f8AAPf+AwO80AYGMJkGBjCVBgYwiQYGMBQGBjAYBgYwGwYGMCAGBjAqBgYwPQYG
+        MFUGBjBsBgYwggYGMJMGBjCdBgYwogQEmMMCAuf7AQH0/wEB9P8BAfT/AQH0/wEB9P8BAfT/AQH0/wEB
+        8/8BAfP/AQH0/wEB9P8BAfT/AQH0/wEB9P8BAfT/AgLd9QUFca8GBjCeBgYwOQYGMEEGBjBEBgYwRQYG
+        MEYGBjBLBgYwVwYGMGoGBjB+BgYwkQYGMKEGBjCsBgYwsQYGQ7cDA7fqAgLe/wIC4P8CAuD/AgLg/wIC
+        4P8CAt//AgLf/wIC3/8CAt//AgLg/wIC4P8CAuD/AgLg/wIC4P8CAuD/AgLc/gQEqdwGBjBpBgYwcgYG
+        MHUGBjB1BgYwcwYGMHMGBjB1BgYwfAYGMIkGBjCYBgYwpgYGMLMGBjC+BgYwxAYGMMYGBnbZAwO7/QMD
+        xv8DA8b/AwPG/wMDxf8DA8T/AwPE/wMDxf8DA8b/AwPG/wMDxv8DA8b/AwPF/wMDxf8DA8f/AwPL/wYG
+        MIwGBjCQBgYwkQYGMJAGBjCPBgYwjwYGMI8GBjCQBgYwlAYGMJsGBjCmBgYwsgYGML0GBjDGBgYwzAYG
+        MNAGBjnTBQWS8gQEs/8EBLT/BAS0/wQEs/8EBLP/BAS0/wQEtP8EBLT/BAS0/wQEtP8EBLP/BASz/wQE
+        tP8EBLX/BgYwlwYGMJgGBjCYBgYwmAYGMJcGBjCXBgYwlwYGMJcGBjCYBgYwmgYGMJ4GBjCnBgYwsQYG
+        MLsGBjDFBgYwzgYGMNIGBjDUBgZl4gQEpP0EBK7/BASu/wQErv8EBK7/BASu/wQErv8EBK7/BASu/wQE
+        rv8EBK7/BASu/wQErv8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//wAA//8AAP//AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAAfwAA
+        AB8AAAAPAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+</value>
+  </data>
+  <data name="&gt;&gt;label.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;MinutesTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;HoursTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ClockTimer.Name" xml:space="preserve">
+    <value>ClockTimer</value>
+  </data>
+  <data name="&gt;&gt;MinutesTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MinutesTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>76, 76</value>
+  </data>
+  <data name="&gt;&gt;terminateToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HoursTextBox.Name" xml:space="preserve">
+    <value>HoursTextBox</value>
+  </data>
+  <data name="notifyIcon1.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="pictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="label.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="&gt;&gt;NotificationAreaIcon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NotifyIcon, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="terminateButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="&gt;&gt;terminateButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="notifyIcon1.BalloonTipText" xml:space="preserve">
+    <value>Hi</value>
+  </data>
+  <data name="SecondsTextBox.MaxLength" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>76, 6</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="SecondsTextBox.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="HoursTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 63</value>
+  </data>
+  <data name="MinutesTextBox.Text" xml:space="preserve">
+    <value>00</value>
+  </data>
+  <data name="&gt;&gt;NotificationAreaContextMenu.Name" xml:space="preserve">
+    <value>NotificationAreaContextMenu</value>
+  </data>
+  <data name="&gt;&gt;MinutesTextBox.Name" xml:space="preserve">
+    <value>MinutesTextBox</value>
+  </data>
+  <data name="MinutesTextBox.MaxLength" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;EndTimer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;terminateButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;NotificationAreaContextMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MinutesTextBox.WordWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;SecondsTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="HoursTextBox.WordWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;SecondsTextBox.Name" xml:space="preserve">
+    <value>SecondsTextBox</value>
+  </data>
+  <data name="&gt;&gt;notifyIcon1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NotifyIcon, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="MinutesTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="HoursTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 19</value>
+  </data>
+  <data name="HoursTextBox.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;notifyIcon1.Name" xml:space="preserve">
+    <value>notifyIcon1</value>
+  </data>
+  <data name="terminateButton.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>393, 298</value>
+  </data>
   <data name="notifyIcon1.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -197,6 +435,87 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
 </value>
   </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="&gt;&gt;SecondsTextBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MinutesTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>102</value>
+  </data>
+  <data name="&gt;&gt;label.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="terminateButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="terminateButton.Text" xml:space="preserve">
+    <value>TERMINATE</value>
+  </data>
+  <data name="HoursTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Cascadia Code, 36pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SecondsTextBox.Text" xml:space="preserve">
+    <value>00</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MinutesTextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="HoursTextBox.Text" xml:space="preserve">
+    <value>00</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Brains</value>
+  </data>
+  <data name="&gt;&gt;HoursTextBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;terminateButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="terminateButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Stencil, 12pt</value>
+  </data>
+  <data name="&gt;&gt;EndTimer.Name" xml:space="preserve">
+    <value>EndTimer</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>brains..?</value>
+  </data>
+  <data name="SecondsTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>146, 76</value>
+  </data>
+  <data name="notifyIcon1.BalloonTipTitle" xml:space="preserve">
+    <value>brains?</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 64</value>
+  </data>
+  <data name="SecondsTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 63</value>
+  </data>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABgmlDQ1BJQ0MgcHJvZmlsZQAAKM+VkTlI
@@ -237,10 +556,73 @@
         TDs1dQIxQHxzfVqJCA8DU4YDT37aGm8R4RHkMM8z0gMDXqXPj439C9L6Il1hQucsAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="HoursTextBox.MaxLength" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="MinutesTextBox.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStrip1.Name" xml:space="preserve">
+    <value>contextMenuStrip1</value>
+  </data>
+  <data name="terminateToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="terminateButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 43</value>
+  </data>
+  <data name="label.Text" xml:space="preserve">
+    <value>Searching for brains...</value>
+  </data>
+  <data name="label.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="terminateButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>76, 27</value>
+  </data>
+  <data name="HoursTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="SecondsTextBox.WordWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;terminateToolStripMenuItem.Name" xml:space="preserve">
+    <value>terminateToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;terminateButton.Name" xml:space="preserve">
+    <value>terminateButton</value>
+  </data>
+  <data name="MinutesTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Cascadia Code, 36pt, style=Bold</value>
+  </data>
+  <data name="label.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Chiller, 11.25pt, style=Bold</value>
+  </data>
+  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>349, 12</value>
+  </metadata>
+  <metadata name="NotificationAreaContextMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>171, 19</value>
+  </metadata>
+  <metadata name="NotificationAreaIcon.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <metadata name="EndTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>131, 12</value>
+    <value>19, 47</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="notifyIcon1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
   </metadata>
   <metadata name="ClockTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>235, 12</value>
+    <value>113, 46</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>en-US</value>
   </metadata>
 </root>
