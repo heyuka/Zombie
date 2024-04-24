@@ -107,7 +107,7 @@ namespace Zombie
             return false;
         }
 
-        private void NotifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
+        private void NotificationAreaIcon_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             if (this.Visible)
             {
@@ -118,6 +118,11 @@ namespace Zombie
                 isVisible = true;
             }
             this.Visible = !this.Visible;
+        }
+
+        private void NotificationAreaIcon_BalloonTipShown(Object sender, EventArgs e)
+        {
+
         }
 
         protected override void SetVisibleCore(bool value)

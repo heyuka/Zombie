@@ -7,7 +7,7 @@ namespace Zombie
         ///  Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
-        private bool isVisible = true;
+        private bool isVisible = false;
 
         /// <summary>
         ///  Clean up any resources being used.
@@ -52,7 +52,7 @@ namespace Zombie
             NotificationAreaIcon.BalloonTipIcon = ToolTipIcon.Info;
             resources.ApplyResources(NotificationAreaIcon, "NotificationAreaIcon");
             NotificationAreaIcon.ContextMenuStrip = NotificationAreaContextMenu;
-            NotificationAreaIcon.MouseDoubleClick += NotifyIcon1_MouseDoubleClick;
+            NotificationAreaIcon.MouseDoubleClick += NotificationAreaIcon_MouseDoubleClick;
             // 
             // pictureBox1
             // 
