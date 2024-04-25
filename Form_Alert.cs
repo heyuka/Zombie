@@ -11,19 +11,19 @@ using System.Windows.Forms;
 
 namespace Zombie
 {
-    public partial class AlertForm : Form
+    public partial class Form_Alert : Form
     {
-        public AlertForm()
+        public Form_Alert()
         {
             InitializeComponent();
         }
 
-        private void AbortButton_Click(object sender, EventArgs e)
+        private void Button_Abort_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void TerminateButton_Click(object sender, EventArgs e)
+        private void Button_Sanitize_Click(object sender, EventArgs e)
         {
             ProcessStartInfo psi = new("shutdown", "/s /t 0")
             {
@@ -35,10 +35,10 @@ namespace Zombie
 
         int timeout = 5;
 
-        private void SanitationTimer_Tick(object sender, EventArgs e)
+        private void Timer_Sanitation_Tick(object sender, EventArgs e)
         {
-            TerminateButton.Text = $"Sanitize Facility ({timeout})";
-            if (timeout <= 0) TerminateButton.PerformClick();
+            Button_Sanitize.Text = $"Sanitize Facility ({timeout})";
+            if (timeout <= 0) Button_Sanitize.PerformClick();
             timeout--;
         }
     }
