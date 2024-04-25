@@ -5,6 +5,7 @@ namespace Zombie
         private DateTime endTime;
         private int mouseX = 0;
         private const string KEY = "{SCROLLLOCK}";
+        private Clock clock;
 
         public Form_Brains()
         {
@@ -34,9 +35,27 @@ namespace Zombie
         // show the remaining time.
         private void UpdateWindowTitle()
         {
-            string timeString = (endTime - DateTime.Now).ToString(@"hh\:mm\:ss");
-            Text = timeString;
-            Label_RemainingTime.Text = timeString;
+            TimeSpan timeSpan = endTime - DateTime.Now;
+
+            Text = timeSpan.ToString(@"hh\:mm\:ss");
+            SetTimeRemaining(timeSpan);
+        }
+
+        private void SetTimeRemaining(TimeSpan timeSpan)
+        {
+            // if clock is not initialized, initialize it
+            if (clock == null)
+            {
+                clock = new Clock();
+            }
+            Image[] rasters = clock.SetTime(timeSpan);
+
+            pictureBox_RemainingTime_HoursTens.Image = rasters[0];
+            pictureBox_RemainingTime_HoursOnes.Image = rasters[1];
+            pictureBox_RemainingTime_MinutesTens.Image = rasters[2];
+            pictureBox_RemainingTime_MinutesOnes.Image = rasters[3];
+            pictureBox_RemainingTime_SecondsTens.Image = rasters[4];
+            pictureBox_RemainingTime_SecondsOnes.Image = rasters[5];
         }
 
         // When the timer ticks, the zombie will check if the user is still active. 
@@ -52,13 +71,13 @@ namespace Zombie
                 Thread.Sleep(10);
                 SendKeys.SendWait(KEY);
 
-                Label_Status.Text = "SEARCHING";
-                Label_Status.ForeColor = Color.Gold;
+                Label_Searching.ForeColor = Color.Gold;
+                Label_Feeding.ForeColor = Color.FromArgb(21, 4, 4);
             }
             else
             {
-                Label_Status.Text = "FEEDING";
-                Label_Status.ForeColor = Color.Firebrick;
+                Label_Searching.ForeColor = Color.FromArgb(26, 22, 0);
+                Label_Feeding.ForeColor = Color.Firebrick;
             }
 
             // Reset the timer
@@ -134,6 +153,16 @@ namespace Zombie
         private void Terminator(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void panel_RemainingTime_Paint(object sender, PaintEventArgs e)
+        {
+            SetTimeRemaining(new TimeSpan(0));
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
