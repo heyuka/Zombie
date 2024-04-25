@@ -12,7 +12,11 @@ Have an IT department that knows how to set the screen lock time out through gro
 
 ## Interface
 
-The application starts minimized to the system tray. Double-click the icon to open the main dialog. The main dialog has a start time, an end time, and a button to terminate the application. The default ending time is 16:00. To update the time, change the values in the text boxes. The system updates the end time when focus leaves either of the three time controls.
+The application starts minimized to the system tray. Double-click the icon to open the main dialog.
+
+![The application's system tray icon: a stylized green "Z" on a black background](res/tray_icon.png)
+
+The main dialog has a start time, an end time, and a button to terminate the application. The default ending time is 16:00. To update the time, change the values in the text boxes. The system updates the end time when focus leaves either of the three time controls.
 
 When the user updates the end time, the system will start counting down to the next occurrence of that time. The timer cannot be set to a time in the past, nor can it be set more than 24 hours in the future.
 
@@ -26,3 +30,11 @@ When the end time is reached, the application will display an alert dialog with 
 ![A screenshot of the application's alert dialog that shows the message "Containment Failed" along with buttons labelled "Abort" and "Sanitize Facility (4)"](res/alert_screenshot.png)
 
 Abort kills the process, Sanitize Facility shuts down the computer. There is a five-second timer on the Sanitize Facility button to prevent accidental shutdowns. When the timer ends, the machine shuts down without further warning.
+
+## License
+
+Meh. With the exception of the icon, I don't care. Do what you want with it. Just don't blame me if you get in trouble. So, I guess, Public Domain? Sure. Let's go with that.
+
+Seriously, though, don't use this at work. It's a bad idea.
+
+The icon is my own work and is licensed under the Creative Commons Attribution-ShareAlike 4.0 International license. You can find the icon in the `res` directory.
