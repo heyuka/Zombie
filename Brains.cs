@@ -2,6 +2,9 @@ namespace Zombie
 {
     public partial class Brains : Form
     {
+        private DateTime endTime;
+        private int mouseX = 0;
+
         public Brains()
         {
             InitializeComponent();
@@ -29,16 +32,13 @@ namespace Zombie
         private void FormatAndDisplayEndTime()
         {
             // Update the text boxes to show the current end time, padded with zeros
-            HoursTextBox.Text = endTime.Hour.ToString("00");
-            MinutesTextBox.Text = endTime.Minute.ToString("00");
-            SecondsTextBox.Text = endTime.Second.ToString("00");
+            TextBoxHours.Text = endTime.Hour.ToString("00");
+            TextBoxMinutes.Text = endTime.Minute.ToString("00");
+            TextBoxSeconds.Text = endTime.Second.ToString("00");
         }
 
-        private DateTime endTime;
-
-        private void TerminateButton_Click(object sender, EventArgs e)
+        private void ButtonTerminate_Click(object sender, EventArgs e)
         {
-            // Terminate
             Application.Exit();
         }
 
@@ -49,76 +49,55 @@ namespace Zombie
             string timeString = remainingTime.ToString(@"hh\:mm\:ss");
 
             this.Text = timeString;
-            HoursRemaining.Text = timeString;
+            LabelRemainingTime.Text = timeString;
         }
-
-        private int mouseX = 0;
 
         // Timer
         // When the timer ticks, the zombie will check if the user is still active
-        private void Timer1_Tick(object sender, EventArgs e)
+        private void EndTimer_Tick(object sender, EventArgs e)
         {
 
             // Check if the user is active
             if (!UserIsActive())
             {
-                StatusLabel.Text = "SEARCHING";
+                LabelStatus.Text = "SEARCHING";
                 // Simulate a key press
                 SendKeys.SendWait("{SCROLLLOCK}");
                 Thread.Sleep(10);
                 SendKeys.SendWait("{SCROLLLOCK}");
 
-                StatusLabel.ForeColor = Color.Gold;
+                LabelStatus.ForeColor = Color.Gold;
             }
             else
             {
-                StatusLabel.Text = "FEEDING";
-                StatusLabel.ForeColor = Color.Firebrick;
+                LabelStatus.Text = "FEEDING";
+                LabelStatus.ForeColor = Color.Firebrick;
             }
 
             // Reset the timer
-            EndTimer.Interval = 30000;
+            TimerEnd.Interval = 30000;
 
             UpdateWindowTitle();
         }
 
+        // Check if the user is active by checking if the mouse has moved. 
+        // Set the mouseX variable to the current mouse position to set up for the next check
         private bool UserIsActive()
         {
-            // Get the current mouse position
             Point currentMousePosition = Cursor.Position;
-
-            // Check if the mouse has moved
             if (currentMousePosition.X != mouseX)
             {
-                // Mouse has moved
-                // Update the mouse position
                 mouseX = currentMousePosition.X;
-
-                // Return true
                 return true;
             }
-
-            // Mouse has not moved
-            // Return false
             return false;
         }
 
         private void NotificationAreaIcon_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            if (this.Visible)
-            {
-                isVisible = false;
-            }
-            else
-            {
-                isVisible = true;
-            }
-            this.Visible = !this.Visible;
-        }
+            isVisible = !Visible;
 
-        private void NotificationAreaIcon_BalloonTipShown(Object sender, EventArgs e)
-        {
-
+            Visible = !Visible;
         }
 
         protected override void SetVisibleCore(bool value)
@@ -126,68 +105,38 @@ namespace Zombie
             base.SetVisibleCore(isVisible ? value : isVisible);
         }
 
-        private void SecondsTextBox_TextChanged(object sender, EventArgs e)
+        private void UpdateUserTime(object sender, EventArgs e)
         {
-            UpdateUserTime();
-        }
-
-        private void MinutesTextBox_TextChanged(object sender, EventArgs e)
-        {
-            UpdateUserTime();
-        }
-
-        private void HoursTextBox_TextChanged(object sender, EventArgs e)
-        {
-            UpdateUserTime();
-        }
-
-        private void UpdateUserTime()
-        {
-            string userHours = HoursTextBox.Text;
-            string userMinutes = MinutesTextBox.Text;
-            string userSeconds = SecondsTextBox.Text;
-
-            // Check if the user has entered a valid number
-            if (!int.TryParse(userHours, out int hours))
-            {
-                // Invalid number
-                // Set the hours to 0
-                userHours = "00";
-                HoursTextBox.Text = userHours;
-                return;
-            }
-
-            // Check if the user has entered a valid number
-            if (!int.TryParse(userMinutes, out int minutes))
-            {
-                // Invalid number
-                // Set the minutes to 0
-                userMinutes = "00";
-                MinutesTextBox.Text = userMinutes;
-                return;
-            }
-
-            // Check if the user has entered a valid number
-            if (!int.TryParse(userSeconds, out int seconds))
-            {
-                // Invalid number
-                // Set the seconds to 0
-                userSeconds = "00";
-                SecondsTextBox.Text = userSeconds;
-                return;
-            }
+            int hours = ValidateUserInput(TextBoxHours.Text) % 24;
+            int minutes = ValidateUserInput(TextBoxMinutes.Text) % 60;
+            int seconds = ValidateUserInput(TextBoxSeconds.Text) % 60;
 
             // Update the end time
             UpdateEndTime(hours, minutes, seconds);
         }
 
-        private void ClockTimer_Tick(object sender, EventArgs e)
+        private static int ValidateUserInput(string text)
+        {
+            // this makes IntelliSense throw message CA1806, saying that I'm not doing anything with
+            // the bool value returned by int.TryParse.
+            // Thing is, I am, just indirectly. The documentation says that the out parameter is
+            // set to 0 if the parsing fails, and I know that 0 is a perfectly valid value. In
+            // fact, it's kind of what I want to return if the users puts something dumb in the
+            // text box. 
+            // Having the Message down there in the Error List is annoying, but I'm not going to
+            // waste processing time dealing with that boolean when it's not going to change the
+            // outcome of the program.
+            int.TryParse(text, out int parsedValue);
+            return parsedValue < 0 ? 0 : parsedValue;
+        }
+
+        private void TimerClock_Tick(object sender, EventArgs e)
         {
             // if current time is after endtime, open the Alert window
             if (DateTime.Now > endTime)
             {
-                this.Hide();
-                ClockTimer.Enabled = false;
+                Hide();
+                TimerClock.Enabled = false;
 
                 AlertForm alert = new();
                 alert.ShowDialog(this);

@@ -34,15 +34,15 @@ namespace Zombie
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Brains));
             NotificationAreaIcon = new NotifyIcon(components);
             NotificationAreaContextMenu = new ContextMenuStrip(components);
-            terminateToolStripMenuItem = new ToolStripMenuItem();
-            terminateButton = new Button();
-            EndTimer = new System.Windows.Forms.Timer(components);
-            HoursTextBox = new TextBox();
-            MinutesTextBox = new TextBox();
-            SecondsTextBox = new TextBox();
-            ClockTimer = new System.Windows.Forms.Timer(components);
-            HoursRemaining = new Label();
-            StatusLabel = new Label();
+            ToolStripMenuItemTerminate = new ToolStripMenuItem();
+            ButtonTerminate = new Button();
+            TimerEnd = new System.Windows.Forms.Timer(components);
+            TextBoxHours = new TextBox();
+            TextBoxMinutes = new TextBox();
+            TextBoxSeconds = new TextBox();
+            TimerClock = new System.Windows.Forms.Timer(components);
+            LabelRemainingTime = new Label();
+            LabelStatus = new Label();
             NotificationAreaContextMenu.SuspendLayout();
             SuspendLayout();
             // 
@@ -56,89 +56,89 @@ namespace Zombie
             // NotificationAreaContextMenu
             // 
             resources.ApplyResources(NotificationAreaContextMenu, "NotificationAreaContextMenu");
-            NotificationAreaContextMenu.Items.AddRange(new ToolStripItem[] { terminateToolStripMenuItem });
+            NotificationAreaContextMenu.Items.AddRange(new ToolStripItem[] { ToolStripMenuItemTerminate });
             NotificationAreaContextMenu.Name = "contextMenuStrip1";
             // 
             // terminateToolStripMenuItem
             // 
-            resources.ApplyResources(terminateToolStripMenuItem, "terminateToolStripMenuItem");
-            terminateToolStripMenuItem.Name = "terminateToolStripMenuItem";
-            terminateToolStripMenuItem.Click += TerminateToolStripMenuItem_Click;
+            resources.ApplyResources(ToolStripMenuItemTerminate, "terminateToolStripMenuItem");
+            ToolStripMenuItemTerminate.Name = "terminateToolStripMenuItem";
+            ToolStripMenuItemTerminate.Click += TerminateToolStripMenuItem_Click;
             // 
             // terminateButton
             // 
-            resources.ApplyResources(terminateButton, "terminateButton");
-            terminateButton.BackColor = Color.Firebrick;
-            terminateButton.FlatAppearance.BorderSize = 0;
-            terminateButton.ForeColor = Color.Gold;
-            terminateButton.Name = "terminateButton";
-            terminateButton.UseVisualStyleBackColor = false;
-            terminateButton.Click += TerminateButton_Click;
+            resources.ApplyResources(ButtonTerminate, "terminateButton");
+            ButtonTerminate.BackColor = Color.Firebrick;
+            ButtonTerminate.FlatAppearance.BorderSize = 0;
+            ButtonTerminate.ForeColor = Color.Gold;
+            ButtonTerminate.Name = "terminateButton";
+            ButtonTerminate.UseVisualStyleBackColor = false;
+            ButtonTerminate.Click += ButtonTerminate_Click;
             // 
             // EndTimer
             // 
-            EndTimer.Enabled = true;
-            EndTimer.Tick += Timer1_Tick;
+            TimerEnd.Enabled = true;
+            TimerEnd.Tick += EndTimer_Tick;
             // 
             // HoursTextBox
             // 
-            resources.ApplyResources(HoursTextBox, "HoursTextBox");
-            HoursTextBox.BackColor = SystemColors.WindowText;
-            HoursTextBox.BorderStyle = BorderStyle.FixedSingle;
-            HoursTextBox.CharacterCasing = CharacterCasing.Upper;
-            HoursTextBox.ForeColor = Color.Lime;
-            HoursTextBox.Name = "HoursTextBox";
-            HoursTextBox.Leave += HoursTextBox_TextChanged;
+            resources.ApplyResources(TextBoxHours, "HoursTextBox");
+            TextBoxHours.BackColor = SystemColors.WindowText;
+            TextBoxHours.BorderStyle = BorderStyle.FixedSingle;
+            TextBoxHours.CharacterCasing = CharacterCasing.Upper;
+            TextBoxHours.ForeColor = Color.Lime;
+            TextBoxHours.Name = "HoursTextBox";
+            TextBoxHours.Leave += UpdateUserTime;
             // 
             // MinutesTextBox
             // 
-            resources.ApplyResources(MinutesTextBox, "MinutesTextBox");
-            MinutesTextBox.BackColor = SystemColors.WindowText;
-            MinutesTextBox.BorderStyle = BorderStyle.FixedSingle;
-            MinutesTextBox.CharacterCasing = CharacterCasing.Upper;
-            MinutesTextBox.ForeColor = Color.Lime;
-            MinutesTextBox.Name = "MinutesTextBox";
-            MinutesTextBox.Leave += MinutesTextBox_TextChanged;
+            resources.ApplyResources(TextBoxMinutes, "MinutesTextBox");
+            TextBoxMinutes.BackColor = SystemColors.WindowText;
+            TextBoxMinutes.BorderStyle = BorderStyle.FixedSingle;
+            TextBoxMinutes.CharacterCasing = CharacterCasing.Upper;
+            TextBoxMinutes.ForeColor = Color.Lime;
+            TextBoxMinutes.Name = "MinutesTextBox";
+            TextBoxMinutes.Leave += UpdateUserTime;
             // 
             // SecondsTextBox
             // 
-            resources.ApplyResources(SecondsTextBox, "SecondsTextBox");
-            SecondsTextBox.BackColor = SystemColors.WindowText;
-            SecondsTextBox.BorderStyle = BorderStyle.FixedSingle;
-            SecondsTextBox.CharacterCasing = CharacterCasing.Upper;
-            SecondsTextBox.ForeColor = Color.Lime;
-            SecondsTextBox.Name = "SecondsTextBox";
-            SecondsTextBox.Leave += SecondsTextBox_TextChanged;
+            resources.ApplyResources(TextBoxSeconds, "SecondsTextBox");
+            TextBoxSeconds.BackColor = SystemColors.WindowText;
+            TextBoxSeconds.BorderStyle = BorderStyle.FixedSingle;
+            TextBoxSeconds.CharacterCasing = CharacterCasing.Upper;
+            TextBoxSeconds.ForeColor = Color.Lime;
+            TextBoxSeconds.Name = "SecondsTextBox";
+            TextBoxSeconds.Leave += UpdateUserTime;
             // 
             // ClockTimer
             // 
-            ClockTimer.Enabled = true;
-            ClockTimer.Tick += ClockTimer_Tick;
+            TimerClock.Enabled = true;
+            TimerClock.Tick += TimerClock_Tick;
             // 
             // HoursRemaining
             // 
-            resources.ApplyResources(HoursRemaining, "HoursRemaining");
-            HoursRemaining.BackColor = Color.Black;
-            HoursRemaining.ForeColor = Color.Lime;
-            HoursRemaining.Name = "HoursRemaining";
+            resources.ApplyResources(LabelRemainingTime, "HoursRemaining");
+            LabelRemainingTime.BackColor = Color.Black;
+            LabelRemainingTime.ForeColor = Color.Lime;
+            LabelRemainingTime.Name = "HoursRemaining";
             // 
             // StatusLabel
             // 
-            resources.ApplyResources(StatusLabel, "StatusLabel");
-            StatusLabel.ForeColor = SystemColors.WindowText;
-            StatusLabel.Name = "StatusLabel";
+            resources.ApplyResources(LabelStatus, "StatusLabel");
+            LabelStatus.ForeColor = SystemColors.WindowText;
+            LabelStatus.Name = "StatusLabel";
             // 
             // Brains
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(64, 64, 64);
-            Controls.Add(HoursRemaining);
-            Controls.Add(SecondsTextBox);
-            Controls.Add(MinutesTextBox);
-            Controls.Add(HoursTextBox);
-            Controls.Add(terminateButton);
-            Controls.Add(StatusLabel);
+            Controls.Add(LabelRemainingTime);
+            Controls.Add(TextBoxSeconds);
+            Controls.Add(TextBoxMinutes);
+            Controls.Add(TextBoxHours);
+            Controls.Add(ButtonTerminate);
+            Controls.Add(LabelStatus);
             FormBorderStyle = FormBorderStyle.None;
             MaximizeBox = false;
             Name = "Brains";
@@ -150,15 +150,15 @@ namespace Zombie
         #endregion
 
         private NotifyIcon NotificationAreaIcon;
-        private Button terminateButton;
-        private System.Windows.Forms.Timer EndTimer;
-        private TextBox HoursTextBox;
-        private TextBox MinutesTextBox;
-        private TextBox SecondsTextBox;
-        private System.Windows.Forms.Timer ClockTimer;
+        private Button ButtonTerminate;
+        private System.Windows.Forms.Timer TimerEnd;
+        private TextBox TextBoxHours;
+        private TextBox TextBoxMinutes;
+        private TextBox TextBoxSeconds;
+        private System.Windows.Forms.Timer TimerClock;
         private ContextMenuStrip NotificationAreaContextMenu;
-        private ToolStripMenuItem terminateToolStripMenuItem;
-        private Label HoursRemaining;
-        private Label StatusLabel;
+        private ToolStripMenuItem ToolStripMenuItemTerminate;
+        private Label LabelRemainingTime;
+        private Label LabelStatus;
     }
 }
