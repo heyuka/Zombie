@@ -36,7 +36,7 @@
             Timer_Sanitation = new System.Windows.Forms.Timer(components);
             SuspendLayout();
             // 
-            // WarningLabel
+            // Label_Warning
             // 
             Label_Warning.AutoSize = true;
             Label_Warning.BackColor = Color.Gold;
@@ -44,46 +44,46 @@
             Label_Warning.ForeColor = Color.Black;
             Label_Warning.Location = new Point(12, 12);
             Label_Warning.Margin = new Padding(6);
-            Label_Warning.Name = "WarningLabel";
+            Label_Warning.Name = "Label_Warning";
             Label_Warning.Size = new Size(699, 76);
             Label_Warning.TabIndex = 0;
             Label_Warning.Text = "CONTAINMENT FAILED";
             // 
-            // AbortButton
+            // Button_Abort
             // 
             Button_Abort.BackColor = Color.Firebrick;
             Button_Abort.FlatStyle = FlatStyle.Popup;
             Button_Abort.Font = new Font("Stencil", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Button_Abort.ForeColor = Color.Gold;
             Button_Abort.Location = new Point(12, 97);
-            Button_Abort.Name = "AbortButton";
+            Button_Abort.Name = "Button_Abort";
             Button_Abort.Size = new Size(344, 76);
             Button_Abort.TabIndex = 1;
             Button_Abort.Text = "Abort";
             Button_Abort.UseVisualStyleBackColor = false;
             Button_Abort.Click += Button_Abort_Click;
             // 
-            // TerminateButton
+            // Button_Sanitize
             // 
             Button_Sanitize.BackColor = Color.Firebrick;
             Button_Sanitize.FlatStyle = FlatStyle.Popup;
             Button_Sanitize.Font = new Font("Stencil", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Button_Sanitize.ForeColor = Color.Gold;
             Button_Sanitize.Location = new Point(367, 97);
-            Button_Sanitize.Name = "TerminateButton";
+            Button_Sanitize.Name = "Button_Sanitize";
             Button_Sanitize.Size = new Size(344, 76);
             Button_Sanitize.TabIndex = 2;
             Button_Sanitize.Text = "Sanitize Facility";
             Button_Sanitize.UseVisualStyleBackColor = false;
             Button_Sanitize.Click += Button_Sanitize_Click;
             // 
-            // SanitationTimer
+            // Timer_Sanitation
             // 
             Timer_Sanitation.Enabled = true;
             Timer_Sanitation.Interval = 1000;
             Timer_Sanitation.Tick += Timer_Sanitation_Tick;
             // 
-            // AlertForm
+            // Form_Alert
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -96,7 +96,7 @@
             Controls.Add(Label_Warning);
             FormBorderStyle = FormBorderStyle.None;
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Name = "AlertForm";
+            Name = "Form_Alert";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Alert";
             ResumeLayout(false);

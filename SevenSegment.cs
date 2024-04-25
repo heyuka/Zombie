@@ -8,19 +8,19 @@ namespace Zombie
 {
     internal class SevenSegment
     {
-        private readonly string[] rasters =
+        private readonly Image[] Images =
         [
-            "0.png",
-            "1.png",
-            "2.png",
-            "3.png",
-            "4.png",
-            "5.png",
-            "6.png",
-            "7.png",
-            "8.png",
-            "9.png",
-            "colon.png"
+            Properties.Resources.Zero,
+            Properties.Resources.One,
+            Properties.Resources.Two,
+            Properties.Resources.Three,
+            Properties.Resources.Four,
+            Properties.Resources.Five,
+            Properties.Resources.Six,
+            Properties.Resources.Seven,
+            Properties.Resources.Eight,
+            Properties.Resources.Nine,
+            Properties.Resources.Colon
         ];
 
         public enum DisplayCharacter
@@ -38,47 +38,27 @@ namespace Zombie
             Colon = 10
         }
 
-        public enum Height
-        {
-            Sixteen = 16,
-            ThirtyTwo = 32,
-            SixtyFour = 64
-        }
-
-        private Height height;
-
-        public void SetHeight(Height height)
-        {
-            this.height = height;
-        }
-
         private DisplayCharacter character;
 
-        public string SetCharacter(DisplayCharacter character)
+        public Image SetCharacter(DisplayCharacter displayCharacter)
         {
-            this.character = character;
-            return GetRaster();
+            character = displayCharacter;
+            return GetImage();
         }
 
         public SevenSegment()
         {
-            height = Height.ThirtyTwo;
+            character = DisplayCharacter.Zero;
         }
 
-        public SevenSegment(Height height)
+        public SevenSegment(DisplayCharacter displayCharacter)
         {
-            this.height = height;
+            character = displayCharacter;
         }
 
-        public SevenSegment(Height height, DisplayCharacter character)
+        public Image GetImage()
         {
-            this.height = height;
-            this.character = character;
-        }
-
-        public string GetRaster()
-        {
-            return $"res/{height}/{rasters[(int)character]}";
+            return Images[(int)character];
         }
     }
 }

@@ -117,23 +117,20 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="NotificationAreaIcon.BalloonTipText" xml:space="preserve">
+  <data name="NotifyIcon_Main.BalloonTipText" xml:space="preserve">
     <value>Hi</value>
   </data>
-  <data name="NotificationAreaIcon.BalloonTipTitle" xml:space="preserve">
+  <data name="NotifyIcon_Main.BalloonTipTitle" xml:space="preserve">
     <value>brains?</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="terminateToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 22</value>
-  </data>
-  <data name="terminateToolStripMenuItem.Text" xml:space="preserve">
+  <data name="ToolStripMenuItem_Terminate.Text" xml:space="preserve">
     <value>Terminate</value>
   </data>
-  <data name="NotificationAreaContextMenu.Size" type="System.Drawing.Size, System.Drawing">
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="ContextMenu_NotificationArea.Size" type="System.Drawing.Size, System.Drawing">
     <value>127, 26</value>
   </data>
-  <data name="NotificationAreaIcon.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="NotifyIcon_Main.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAQEAAAAEAGAAoMgAAFgAAACgAAABAAAAAgAAAAAEAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -352,88 +349,306 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
 </value>
   </data>
-  <data name="NotificationAreaIcon.Text" xml:space="preserve">
+  <data name="NotifyIcon_Main.Text" xml:space="preserve">
     <value>brains..?</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="NotificationAreaIcon.Visible" type="System.Boolean, mscorlib">
+  <data name="NotifyIcon_Main.Visible" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="terminateButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Stencil, 21.75pt</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Button_Terminate.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
   </data>
-  <data name="terminateButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 102</value>
+  <data name="Button_Terminate.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Stencil, 27.75pt</value>
   </data>
-  <data name="terminateButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 58</value>
-  </data>
-  <data name="terminateButton.Text" xml:space="preserve">
-    <value>ABORT</value>
-  </data>
-  <data name="HoursTextBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Cascadia Code, 12pt, style=Bold</value>
-  </data>
-  <data name="HoursTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 6</value>
-  </data>
-  <data name="HoursTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>26, 26</value>
-  </data>
-  <data name="MinutesTextBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Cascadia Code, 12pt, style=Bold</value>
-  </data>
-  <data name="MinutesTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>148, 6</value>
-  </data>
-  <data name="MinutesTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>26, 26</value>
-  </data>
-  <data name="SecondsTextBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Cascadia Code, 12pt, style=Bold</value>
-  </data>
-  <data name="SecondsTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>180, 6</value>
-  </data>
-  <data name="SecondsTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>26, 26</value>
-  </data>
-  <data name="HoursRemaining.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Cascadia Code, 28pt, style=Bold</value>
-  </data>
-  <data name="HoursRemaining.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 38</value>
+  <data name="Button_Terminate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 116</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="HoursRemaining.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="Button_Terminate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 6, 6, 6</value>
   </data>
-  <data name="HoursRemaining.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 58</value>
+  <data name="Button_Terminate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 58</value>
   </data>
-  <data name="HoursRemaining.Text" xml:space="preserve">
-    <value>00:00:00</value>
+  <data name="Button_Terminate.Text" xml:space="preserve">
+    <value>TERMINATE</value>
   </data>
-  <data name="HoursRemaining.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopRight</value>
+  <data name="TextBox_Hours.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Cascadia Code, 12pt, style=Bold</value>
   </data>
-  <data name="StatusLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="TextBox_Hours.Location" type="System.Drawing.Point, System.Drawing">
+    <value>203, 6</value>
   </data>
-  <data name="StatusLabel.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="TextBox_Hours.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="TextBox_Hours.MaxLength" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="TextBox_Hours.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 26</value>
+  </data>
+  <data name="TextBox_Hours.Text" xml:space="preserve">
+    <value>00</value>
+  </data>
+  <data name="TextBox_Hours.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="TextBox_Hours.WordWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TextBox_Minutes.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Cascadia Code, 12pt, style=Bold</value>
+  </data>
+  <data name="TextBox_Minutes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>235, 6</value>
+  </data>
+  <data name="TextBox_Minutes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="TextBox_Minutes.MaxLength" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="TextBox_Minutes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 26</value>
+  </data>
+  <data name="TextBox_Minutes.Text" xml:space="preserve">
+    <value>00</value>
+  </data>
+  <data name="TextBox_Minutes.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="TextBox_Minutes.WordWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TextBox_Seconds.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Cascadia Code, 12pt, style=Bold</value>
+  </data>
+  <data name="TextBox_Seconds.Location" type="System.Drawing.Point, System.Drawing">
+    <value>267, 6</value>
+  </data>
+  <data name="TextBox_Seconds.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="TextBox_Seconds.MaxLength" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="TextBox_Seconds.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 26</value>
+  </data>
+  <data name="TextBox_Seconds.Text" xml:space="preserve">
+    <value>00</value>
+  </data>
+  <data name="TextBox_Seconds.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="TextBox_Seconds.WordWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="Label_Searching.Font" type="System.Drawing.Font, System.Drawing">
     <value>Bahnschrift SemiBold Condensed, 29px, style=Bold</value>
   </data>
-  <data name="StatusLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 1</value>
+  <data name="Label_Searching.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
   </data>
-  <data name="StatusLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>119, 35</value>
+  <data name="Label_Searching.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 40</value>
   </data>
-  <data name="StatusLabel.Text" xml:space="preserve">
+  <data name="Label_Searching.Text" xml:space="preserve">
     <value>SEARCHING</value>
   </data>
+  <data name="Label_Searching.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="pictureBox_RemainingTime_HoursTens.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAABACAYAAAB7jnWuAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAD
+        rwAAA68BGB6xfQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAbdEVYdFRpdGxl
+        AFNldmVuIFNlZ21lbnQgRGlzcGxhef+NYcwAAAAcdEVYdEF1dGhvcgBKb3JkYW4gQXZlcnkgKGhleXVr
+        YSmdTb4tAAAAUnRFWHRDb3B5cmlnaHQAQ0MgQXR0cmlidXRpb24tU2hhcmVBbGlrZSBodHRwOi8vY3Jl
+        YXRpdmVjb21tb25zLm9yZy9saWNlbnNlcy9ieS1zYS80LjAvw1RiBQAAASRJREFUaEPtmE0OgjAQhVnh
+        AvaIHAESDSdy58rLmXgMz1QpaZWfZxthHFw8k2/hs5n5aI2pk3QvszEw1ASGmsBQExhqAkOTHlJTnAsR
+        bC3UwzEP031q6ltt2kcrQnNvzK7azfo4xoF0c09A4v3GblV2zH4mkLc5Og7X3D15v/CUix+Brwl2Yr7t
+        3ra6ViJMd3UikZjyUr4+9NjMLVhNpD4FKEABClCAAhSgwB8IoCtZ4Br9NZH640XSzT2B+oNF3ZU58i9m
+        FR/qRxeIERTY9AgiX5LVROrzd4ACFKAABShAAQpQAF+Z7KgWzf6XEB3VDiX65trDao+9Mm82rvdMj0MK
+        8OSeWSAuEWhugWG/VWj2vwSw7UNgqAkMNYGhJjDUBIZKJOYJpNzVV5QNOtgAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="pictureBox_RemainingTime_HoursTens.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="pictureBox_RemainingTime_HoursTens.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 64</value>
+  </data>
+  <data name="pictureBox_RemainingTime_HoursOnes.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAABACAYAAAB7jnWuAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAD
+        rwAAA68BGB6xfQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAbdEVYdFRpdGxl
+        AFNldmVuIFNlZ21lbnQgRGlzcGxhef+NYcwAAAAcdEVYdEF1dGhvcgBKb3JkYW4gQXZlcnkgKGhleXVr
+        YSmdTb4tAAAAUnRFWHRDb3B5cmlnaHQAQ0MgQXR0cmlidXRpb24tU2hhcmVBbGlrZSBodHRwOi8vY3Jl
+        YXRpdmVjb21tb25zLm9yZy9saWNlbnNlcy9ieS1zYS80LjAvw1RiBQAAASRJREFUaEPtmE0OgjAQhVnh
+        AvaIHAESDSdy58rLmXgMz1QpaZWfZxthHFw8k2/hs5n5aI2pk3QvszEw1ASGmsBQExhqAkOTHlJTnAsR
+        bC3UwzEP031q6ltt2kcrQnNvzK7azfo4xoF0c09A4v3GblV2zH4mkLc5Og7X3D15v/CUix+Brwl2Yr7t
+        3ra6ViJMd3UikZjyUr4+9NjMLVhNpD4FKEABClCAAhSgwB8IoCtZ4Br9NZH640XSzT2B+oNF3ZU58i9m
+        FR/qRxeIERTY9AgiX5LVROrzd4ACFKAABShAAQpQAF+Z7KgWzf6XEB3VDiX65trDao+9Mm82rvdMj0MK
+        8OSeWSAuEWhugWG/VWj2vwSw7UNgqAkMNYGhJjDUBIZKJOYJpNzVV5QNOtgAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="pictureBox_RemainingTime_HoursOnes.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox_RemainingTime_HoursOnes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 64</value>
+  </data>
+  <data name="pictureBox_RemainingTime_Separator1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAABACAYAAAB7jnWuAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAD
+        rwAAA68BGB6xfQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAbdEVYdFRpdGxl
+        AFNldmVuIFNlZ21lbnQgRGlzcGxhef+NYcwAAAAcdEVYdEF1dGhvcgBKb3JkYW4gQXZlcnkgKGhleXVr
+        YSmdTb4tAAAAUnRFWHRDb3B5cmlnaHQAQ0MgQXR0cmlidXRpb24tU2hhcmVBbGlrZSBodHRwOi8vY3Jl
+        YXRpdmVjb21tb25zLm9yZy9saWNlbnNlcy9ieS1zYS80LjAvw1RiBQAAAQ9JREFUaEPt1j0OgkAUAGEb
+        jDegNHAANuGUauKVJGrtmVafiYVkYA3F2GDyNYObx88Wu3n98p9hNGE0YTRhNGE0YTRhNGE0YTRhNGE0
+        YTRhNGE0YTRhNGE0YZy1rbe5PbU53dNbe27zbr/D//4A46QY3g1d7h/9lzSk9zVaU4BxUjz5ePhHc2xw
+        TQHGSfHKaXhIt4RrCjBOmr2Bq3ADseFoeGgOwieI3R4bbjy8u3S5qitcU4BxVuz22HDxzUM8+cLhAaMJ
+        owmjCaMJowmjCaMJowmjCaMJowmjCeOs9Uw4Hv6xngnXM+F6JlwIowmjCaMJowmjCaMJowmjCaMJowmj
+        CaMJowmjCaMJowmjZJOfLJNuxVy9amkAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="pictureBox_RemainingTime_Separator1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox_RemainingTime_Separator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 64</value>
+  </data>
+  <data name="pictureBox_RemainingTime_MinutesTens.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAABACAYAAAB7jnWuAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAD
+        rwAAA68BGB6xfQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAbdEVYdFRpdGxl
+        AFNldmVuIFNlZ21lbnQgRGlzcGxhef+NYcwAAAAcdEVYdEF1dGhvcgBKb3JkYW4gQXZlcnkgKGhleXVr
+        YSmdTb4tAAAAUnRFWHRDb3B5cmlnaHQAQ0MgQXR0cmlidXRpb24tU2hhcmVBbGlrZSBodHRwOi8vY3Jl
+        YXRpdmVjb21tb25zLm9yZy9saWNlbnNlcy9ieS1zYS80LjAvw1RiBQAAASRJREFUaEPtmE0OgjAQhVnh
+        AvaIHAESDSdy58rLmXgMz1QpaZWfZxthHFw8k2/hs5n5aI2pk3QvszEw1ASGmsBQExhqAkOTHlJTnAsR
+        bC3UwzEP031q6ltt2kcrQnNvzK7azfo4xoF0c09A4v3GblV2zH4mkLc5Og7X3D15v/CUix+Brwl2Yr7t
+        3ra6ViJMd3UikZjyUr4+9NjMLVhNpD4FKEABClCAAhSgwB8IoCtZ4Br9NZH640XSzT2B+oNF3ZU58i9m
+        FR/qRxeIERTY9AgiX5LVROrzd4ACFKAABShAAQpQAF+Z7KgWzf6XEB3VDiX65trDao+9Mm82rvdMj0MK
+        8OSeWSAuEWhugWG/VWj2vwSw7UNgqAkMNYGhJjDUBIZKJOYJpNzVV5QNOtgAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="pictureBox_RemainingTime_MinutesTens.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox_RemainingTime_MinutesTens.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 64</value>
+  </data>
+  <data name="pictureBox_RemainingTime_MinutesOnes.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAABACAYAAAB7jnWuAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAD
+        rwAAA68BGB6xfQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAbdEVYdFRpdGxl
+        AFNldmVuIFNlZ21lbnQgRGlzcGxhef+NYcwAAAAcdEVYdEF1dGhvcgBKb3JkYW4gQXZlcnkgKGhleXVr
+        YSmdTb4tAAAAUnRFWHRDb3B5cmlnaHQAQ0MgQXR0cmlidXRpb24tU2hhcmVBbGlrZSBodHRwOi8vY3Jl
+        YXRpdmVjb21tb25zLm9yZy9saWNlbnNlcy9ieS1zYS80LjAvw1RiBQAAASRJREFUaEPtmE0OgjAQhVnh
+        AvaIHAESDSdy58rLmXgMz1QpaZWfZxthHFw8k2/hs5n5aI2pk3QvszEw1ASGmsBQExhqAkOTHlJTnAsR
+        bC3UwzEP031q6ltt2kcrQnNvzK7azfo4xoF0c09A4v3GblV2zH4mkLc5Og7X3D15v/CUix+Brwl2Yr7t
+        3ra6ViJMd3UikZjyUr4+9NjMLVhNpD4FKEABClCAAhSgwB8IoCtZ4Br9NZH640XSzT2B+oNF3ZU58i9m
+        FR/qRxeIERTY9AgiX5LVROrzd4ACFKAABShAAQpQAF+Z7KgWzf6XEB3VDiX65trDao+9Mm82rvdMj0MK
+        8OSeWSAuEWhugWG/VWj2vwSw7UNgqAkMNYGhJjDUBIZKJOYJpNzVV5QNOtgAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="pictureBox_RemainingTime_MinutesOnes.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox_RemainingTime_MinutesOnes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 64</value>
+  </data>
+  <data name="pictureBox_RemainingTime_Separator2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAABACAYAAAB7jnWuAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAD
+        rwAAA68BGB6xfQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAbdEVYdFRpdGxl
+        AFNldmVuIFNlZ21lbnQgRGlzcGxhef+NYcwAAAAcdEVYdEF1dGhvcgBKb3JkYW4gQXZlcnkgKGhleXVr
+        YSmdTb4tAAAAUnRFWHRDb3B5cmlnaHQAQ0MgQXR0cmlidXRpb24tU2hhcmVBbGlrZSBodHRwOi8vY3Jl
+        YXRpdmVjb21tb25zLm9yZy9saWNlbnNlcy9ieS1zYS80LjAvw1RiBQAAAQ9JREFUaEPt1j0OgkAUAGEb
+        jDegNHAANuGUauKVJGrtmVafiYVkYA3F2GDyNYObx88Wu3n98p9hNGE0YTRhNGE0YTRhNGE0YTRhNGE0
+        YTRhNGE0YTRhNGE0YZy1rbe5PbU53dNbe27zbr/D//4A46QY3g1d7h/9lzSk9zVaU4BxUjz5ePhHc2xw
+        TQHGSfHKaXhIt4RrCjBOmr2Bq3ADseFoeGgOwieI3R4bbjy8u3S5qitcU4BxVuz22HDxzUM8+cLhAaMJ
+        owmjCaMJowmjCaMJowmjCaMJowmjCeOs9Uw4Hv6xngnXM+F6JlwIowmjCaMJowmjCaMJowmjCaMJowmj
+        CaMJowmjCaMJowmjZJOfLJNuxVy9amkAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="pictureBox_RemainingTime_Separator2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox_RemainingTime_Separator2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 64</value>
+  </data>
+  <data name="pictureBox_RemainingTime_SecondsTens.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAABACAYAAAB7jnWuAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAD
+        rwAAA68BGB6xfQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAbdEVYdFRpdGxl
+        AFNldmVuIFNlZ21lbnQgRGlzcGxhef+NYcwAAAAcdEVYdEF1dGhvcgBKb3JkYW4gQXZlcnkgKGhleXVr
+        YSmdTb4tAAAAUnRFWHRDb3B5cmlnaHQAQ0MgQXR0cmlidXRpb24tU2hhcmVBbGlrZSBodHRwOi8vY3Jl
+        YXRpdmVjb21tb25zLm9yZy9saWNlbnNlcy9ieS1zYS80LjAvw1RiBQAAASRJREFUaEPtmE0OgjAQhVnh
+        AvaIHAESDSdy58rLmXgMz1QpaZWfZxthHFw8k2/hs5n5aI2pk3QvszEw1ASGmsBQExhqAkOTHlJTnAsR
+        bC3UwzEP031q6ltt2kcrQnNvzK7azfo4xoF0c09A4v3GblV2zH4mkLc5Og7X3D15v/CUix+Brwl2Yr7t
+        3ra6ViJMd3UikZjyUr4+9NjMLVhNpD4FKEABClCAAhSgwB8IoCtZ4Br9NZH640XSzT2B+oNF3ZU58i9m
+        FR/qRxeIERTY9AgiX5LVROrzd4ACFKAABShAAQpQAF+Z7KgWzf6XEB3VDiX65trDao+9Mm82rvdMj0MK
+        8OSeWSAuEWhugWG/VWj2vwSw7UNgqAkMNYGhJjDUBIZKJOYJpNzVV5QNOtgAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="pictureBox_RemainingTime_SecondsTens.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox_RemainingTime_SecondsTens.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 64</value>
+  </data>
+  <data name="pictureBox_RemainingTime_SecondsOnes.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAABACAYAAAB7jnWuAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAD
+        rwAAA68BGB6xfQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAbdEVYdFRpdGxl
+        AFNldmVuIFNlZ21lbnQgRGlzcGxhef+NYcwAAAAcdEVYdEF1dGhvcgBKb3JkYW4gQXZlcnkgKGhleXVr
+        YSmdTb4tAAAAUnRFWHRDb3B5cmlnaHQAQ0MgQXR0cmlidXRpb24tU2hhcmVBbGlrZSBodHRwOi8vY3Jl
+        YXRpdmVjb21tb25zLm9yZy9saWNlbnNlcy9ieS1zYS80LjAvw1RiBQAAASRJREFUaEPtmE0OgjAQhVnh
+        AvaIHAESDSdy58rLmXgMz1QpaZWfZxthHFw8k2/hs5n5aI2pk3QvszEw1ASGmsBQExhqAkOTHlJTnAsR
+        bC3UwzEP031q6ltt2kcrQnNvzK7azfo4xoF0c09A4v3GblV2zH4mkLc5Og7X3D15v/CUix+Brwl2Yr7t
+        3ra6ViJMd3UikZjyUr4+9NjMLVhNpD4FKEABClCAAhSgwB8IoCtZ4Br9NZH640XSzT2B+oNF3ZU58i9m
+        FR/qRxeIERTY9AgiX5LVROrzd4ACFKAABShAAQpQAF+Z7KgWzf6XEB3VDiX65trDao+9Mm82rvdMj0MK
+        8OSeWSAuEWhugWG/VWj2vwSw7UNgqAkMNYGhJjDUBIZKJOYJpNzVV5QNOtgAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="pictureBox_RemainingTime_SecondsOnes.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox_RemainingTime_SecondsOnes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 64</value>
+  </data>
+  <data name="panel_RemainingTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 37</value>
+  </data>
+  <data name="panel_RemainingTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 74</value>
+  </data>
+  <data name="Label_Feeding.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Bahnschrift SemiBold Condensed, 29px, style=Bold</value>
+  </data>
+  <data name="Label_Feeding.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label_Feeding.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="Label_Feeding.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 40</value>
+  </data>
+  <data name="Label_Feeding.Text" xml:space="preserve">
+    <value>FEEDING</value>
+  </data>
+  <data name="Label_Feeding.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>212, 166</value>
+    <value>302, 228</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
