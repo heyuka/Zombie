@@ -22,6 +22,8 @@ You can also set the end time for the current session by changing the hour, minu
 
 The application has two modes: Feeding and Searching. Feeding mode monitors the cursor position for movement every 30 seconds. If movement is detected, it stays in Feeding mode and resets the timer. If no movement is detected, it switches to Searching mode and simulates a key press every 30 seconds. Searching mode monitors for mouse movement and simulates a key press if no movement is detected for 30 seconds.
 
+The feeding and searching intervals are configurable in the application's settings file. The relevant settings are `feedingInterval` and `searchingInterval`. The default values are 30,000 milliseconds for both.
+
 ![A screenshot of the application's main dialog in Feeding mode that shows the status of "Feeding", the current end time, the remaining time until that end time, and a button labelled "Terminate"](res/feeding_screenshot.png)
 ![A screenshot of the application's main dialog in Feeding mode that shows the status of "Searching", the current end time, the remaining time until that end time, and a button labelled "Terminate"](res/searching_screenshot.png)
 
