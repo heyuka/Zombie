@@ -52,6 +52,7 @@ namespace Zombie
             pictureBox_RemainingTime_SecondsOnes = new PictureBox();
             panel_RemainingTime = new Panel();
             Label_Feeding = new Label();
+            buttonSetDefault = new Button();
             ContextMenu_NotificationArea.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox_RemainingTime_HoursTens).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_RemainingTime_HoursOnes).BeginInit();
@@ -213,11 +214,22 @@ namespace Zombie
             Label_Feeding.Name = "Label_Feeding";
             Label_Feeding.Click += label1_Click;
             // 
+            // buttonSetDefault
+            // 
+            resources.ApplyResources(buttonSetDefault, "buttonSetDefault");
+            buttonSetDefault.BackColor = Color.Black;
+            buttonSetDefault.FlatAppearance.BorderColor = Color.White;
+            buttonSetDefault.ForeColor = Color.LimeGreen;
+            buttonSetDefault.Name = "buttonSetDefault";
+            buttonSetDefault.UseVisualStyleBackColor = false;
+            buttonSetDefault.Click += buttonSetDefault_Click;
+            // 
             // Form_Brains
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(64, 64, 64);
+            Controls.Add(buttonSetDefault);
             Controls.Add(Label_Feeding);
             Controls.Add(panel_RemainingTime);
             Controls.Add(Label_Searching);
@@ -264,5 +276,6 @@ namespace Zombie
         private PictureBox pictureBox_RemainingTime_SecondsOnes;
         private Panel panel_RemainingTime;
         private Label Label_Feeding;
+        private Button buttonSetDefault;
     }
 }

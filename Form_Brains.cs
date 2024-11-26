@@ -11,7 +11,13 @@ namespace Zombie
         {
             InitializeComponent();
 
-            UpdateEndTime(16, 0, 0);
+            clock = new Clock();
+
+            UpdateEndTime(
+                Properties.Settings.Default.defaultHour,
+                Properties.Settings.Default.defaultMinute,
+                Properties.Settings.Default.defaultSecond
+                );
         }
 
         // Update the end time based on the provided hours, minutes, and seconds.
@@ -43,11 +49,6 @@ namespace Zombie
 
         private void SetTimeRemaining(TimeSpan timeSpan)
         {
-            // if clock is not initialized, initialize it
-            if (clock == null)
-            {
-                clock = new Clock();
-            }
             Image[] rasters = clock.SetTime(timeSpan);
 
             pictureBox_RemainingTime_HoursTens.Image = rasters[0];
@@ -163,6 +164,33 @@ namespace Zombie
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonSetDefault_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.defaultHour = ValidateUserInput(TextBox_Hours.Text) % 24;
+            Properties.Settings.Default.defaultMinute = ValidateUserInput(TextBox_Minutes.Text) % 60;
+            Properties.Settings.Default.defaultSecond = ValidateUserInput(TextBox_Seconds.Text) % 60;
+            Properties.Settings.Default.Save();
+        }
+
+        // Trying to override WndProc to allow moving the window by clicking anywhere on the form
+        // ref: https://www.betaarchive.com/wiki/index.php/Microsoft_KB_Archive/320687
+        private const int WM_NCHITTEST = 0x84;
+        private const int HTCLIENT = 0x1;
+        private const int HTCAPTION = 0x2;
+
+        protected override void WndProc(ref Message m)
+        {
+            switch (m.Msg)
+            {
+                case WM_NCHITTEST:
+                    base.WndProc(ref m);
+                    if ((int)m.Result == HTCLIENT)
+                        m.Result = (IntPtr)HTCAPTION;
+                    return;
+            }
+            base.WndProc(ref m);
         }
     }
 }
