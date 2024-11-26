@@ -11,6 +11,8 @@ namespace Zombie
         {
             InitializeComponent();
 
+            clock = new Clock();
+
             UpdateEndTime(16, 0, 0);
         }
 
@@ -43,11 +45,6 @@ namespace Zombie
 
         private void SetTimeRemaining(TimeSpan timeSpan)
         {
-            // if clock is not initialized, initialize it
-            if (clock == null)
-            {
-                clock = new Clock();
-            }
             Image[] rasters = clock.SetTime(timeSpan);
 
             pictureBox_RemainingTime_HoursTens.Image = rasters[0];
