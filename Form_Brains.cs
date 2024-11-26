@@ -15,7 +15,7 @@ namespace Zombie
 
             UpdateEndTime(
                 Properties.Settings.Default.defaultHour,
-                Properties.Settings.Default.defaultMinute, 
+                Properties.Settings.Default.defaultMinute,
                 Properties.Settings.Default.defaultSecond
                 );
         }
@@ -164,6 +164,14 @@ namespace Zombie
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonSetDefault_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.defaultHour = ValidateUserInput(TextBox_Hours.Text) % 24;
+            Properties.Settings.Default.defaultMinute = ValidateUserInput(TextBox_Minutes.Text) % 60;
+            Properties.Settings.Default.defaultSecond = ValidateUserInput(TextBox_Seconds.Text) % 60;
+            Properties.Settings.Default.Save();
         }
     }
 }

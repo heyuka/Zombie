@@ -123,9 +123,6 @@
   <data name="NotifyIcon_Main.BalloonTipTitle" xml:space="preserve">
     <value>brains?</value>
   </data>
-  <data name="ToolStripMenuItem_Terminate.Text" xml:space="preserve">
-    <value>Terminate</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="ContextMenu_NotificationArea.Size" type="System.Drawing.Size, System.Drawing">
     <value>127, 26</value>
@@ -356,6 +353,9 @@
   <data name="NotifyIcon_Main.Visible" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="ToolStripMenuItem_Terminate.Text" xml:space="preserve">
+    <value>Terminate</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Button_Terminate.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Popup</value>
@@ -380,7 +380,7 @@
     <value>Cascadia Code, 12pt, style=Bold</value>
   </data>
   <data name="TextBox_Hours.Location" type="System.Drawing.Point, System.Drawing">
-    <value>203, 6</value>
+    <value>122, 6</value>
   </data>
   <data name="TextBox_Hours.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 6, 6, 6</value>
@@ -404,7 +404,7 @@
     <value>Cascadia Code, 12pt, style=Bold</value>
   </data>
   <data name="TextBox_Minutes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>235, 6</value>
+    <value>154, 6</value>
   </data>
   <data name="TextBox_Minutes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 6, 6, 6</value>
@@ -428,7 +428,7 @@
     <value>Cascadia Code, 12pt, style=Bold</value>
   </data>
   <data name="TextBox_Seconds.Location" type="System.Drawing.Point, System.Drawing">
-    <value>267, 6</value>
+    <value>186, 6</value>
   </data>
   <data name="TextBox_Seconds.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 6, 6, 6</value>
@@ -646,6 +646,33 @@
   </data>
   <data name="Label_Feeding.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
+  </data>
+  <data name="buttonSetDefault.AccessibleDescription" xml:space="preserve">
+    <value>Updates the stored default ending time</value>
+  </data>
+  <data name="buttonSetDefault.AccessibleName" xml:space="preserve">
+    <value>Set Default Time Button</value>
+  </data>
+  <data name="buttonSetDefault.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="buttonSetDefault.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Bahnschrift SemiBold Condensed, 10pt, style=Bold</value>
+  </data>
+  <data name="buttonSetDefault.Location" type="System.Drawing.Point, System.Drawing">
+    <value>218, 6</value>
+  </data>
+  <data name="buttonSetDefault.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="buttonSetDefault.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 26</value>
+  </data>
+  <data name="buttonSetDefault.TabIndex" type="System.Int32, mscorlib">
+    <value>117</value>
+  </data>
+  <data name="buttonSetDefault.Text" xml:space="preserve">
+    <value>Set Default</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>302, 228</value>
