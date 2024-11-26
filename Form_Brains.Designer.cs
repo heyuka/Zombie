@@ -7,7 +7,9 @@ namespace Zombie
         ///  Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
-        private bool isVisible = true;
+
+        // toggles visibility of the window on startup. 
+        private bool isVisible = false;
 
         /// <summary>
         ///  Clean up any resources being used.
