@@ -173,5 +173,24 @@ namespace Zombie
             Properties.Settings.Default.defaultSecond = ValidateUserInput(TextBox_Seconds.Text) % 60;
             Properties.Settings.Default.Save();
         }
+
+        // Trying to override WndProc to allow moving the window by clicking anywhere on the form
+        // ref: https://www.betaarchive.com/wiki/index.php/Microsoft_KB_Archive/320687
+        private const int WM_NCHITTEST = 0x84;
+        private const int HTCLIENT = 0x1;
+        private const int HTCAPTION = 0x2;
+
+        protected override void WndProc(ref Message m)
+        {
+            switch (m.Msg)
+            {
+                case WM_NCHITTEST:
+                    base.WndProc(ref m);
+                    if ((int)m.Result == HTCLIENT)
+                        m.Result = (IntPtr)HTCAPTION;
+                    return;
+            }
+            base.WndProc(ref m);
+        }
     }
 }
