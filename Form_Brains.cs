@@ -13,7 +13,11 @@ namespace Zombie
 
             clock = new Clock();
 
-            UpdateEndTime(16, 0, 0);
+            UpdateEndTime(
+                Properties.Settings.Default.defaultHour,
+                Properties.Settings.Default.defaultMinute, 
+                Properties.Settings.Default.defaultSecond
+                );
         }
 
         // Update the end time based on the provided hours, minutes, and seconds.
