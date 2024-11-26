@@ -58,5 +58,29 @@ namespace Zombie.Properties {
                 this["defaultSecond"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("30000")]
+        public int feedingInterval {
+            get {
+                return ((int)(this["feedingInterval"]));
+            }
+            set {
+                this["feedingInterval"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("30000")]
+        public int searchingInterval {
+            get {
+                return ((int)(this["searchingInterval"]));
+            }
+            set {
+                this["searchingInterval"] = value;
+            }
+        }
     }
 }
