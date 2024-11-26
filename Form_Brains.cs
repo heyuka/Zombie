@@ -63,6 +63,7 @@ namespace Zombie
         // If the user is not active, the zombie will simulate a key press to keep the computer awake.
         private void Timer_End_Tick(object sender, EventArgs e)
         {
+            int interval;
 
             // Check if the user is active
             if (!UserIsActive())
@@ -74,15 +75,19 @@ namespace Zombie
 
                 Label_Searching.ForeColor = Color.Gold;
                 Label_Feeding.ForeColor = Color.FromArgb(21, 4, 4);
+
+                interval = Properties.Settings.Default.searchingInterval;
             }
             else
             {
                 Label_Searching.ForeColor = Color.FromArgb(26, 22, 0);
                 Label_Feeding.ForeColor = Color.Firebrick;
+
+                interval = Properties.Settings.Default.feedingInterval;
             }
 
             // Reset the timer
-            Timer_End.Interval = 30000;
+            Timer_End.Interval = interval;
 
             UpdateWindowTitle();
         }
